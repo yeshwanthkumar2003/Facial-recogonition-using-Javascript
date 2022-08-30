@@ -1,0 +1,179 @@
+
+
+.container {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+canvas{
+    position: absolute ;
+}
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: var(--clr-gray100);
+}
+.nav-list{
+    background:white;
+    box-shadow: 0px 0px 10px var(--clr-gray100);
+    margin: 0;
+    padding: 1rem 0;
+    border-radius: var(--radius);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+.nav-item{
+    list-style: none;
+    margin: 2rem;
+}
+.nav-bar a{
+    text-decoration: none;
+    color: black;
+}
+.nav-item a:hover{
+    color:aquamarine
+}
+.nav-item-1{
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 70rem;
+}
+.btn-primary{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+   background-color: aquamarine;
+    border: none;
+    outline: none;
+    border-radius: var(--radius);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: 200ms ease-in;
+}
+.btn-primary:hover{
+    background:black;
+    color: aliceblue;
+}
+h1 {
+    font-family: 'Source Sans Pro';font-size: 52px;
+    text-align: center;
+}
+h1:hover{
+    color: aquamarine;
+}
+p{
+    font-family: 'Open Sans';
+    font-size: 18px;
+    text-align: center;
+ 
+    color: #6b818c;
+}
+.line{
+    height: 4px;
+    background-color:aquamarine;
+    border: none;
+}
+h2{
+    font-family: 'Source Sans Pro';
+    text-align: center;
+}
+
+
+
+@-webkit-keyframes wiggle {
+  0% {transform: rotateZ(2deg);}
+  50% {transform: rotateZ(-2deg);}
+  100% {transform: rotateZ(2deg);}
+}
+
+@mixin iconTransition{
+
+      transition: all 100ms cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
+}
+
+@mixin wiggler{
+ animation-name: wiggle;
+ animation-duration: .4s;
+ animation-iteration-count: infinite;
+ animation-timing-function: ease;
+}
+
+
+
+*, *::before, *::after{
+box-sizing: border-box; 
+-webkit-box-sizing: border-box; 
+-moz-box-sizing: border-box; 
+-o-box-sizing: border-box;  
+} 
+
+
+.wrap {
+width: 35%;
+margin: 100px auto;
+text-align: center;
+}
+
+.social{
+font-size: 2.5em;
+height: 50px;
+overflow:hidden;
+border-bottom: 1px solid #abc;
+}
+
+i{
+position: relative;
+top: 30px;
+margin: 0 10px;
+@include iconTransition;
+}
+i:hover{
+   top: 5px;
+  
+  }
+
+
+.fb{
+color: #f78010;
+}
+
+.tw{
+color: #09AEEC;
+}
+
+.yt{
+color: #AA2A25;
+}
+
+.dr{
+color: #1236ac;
+}
+
+.sk{
+color: #040404;
+}
+
+.db{
+color: #000;
+}
+
+.ap{
+color: rgb(176, 16, 120);
+}
+.fab fa-js{
+    margin-bottom: 70rem;
+}
